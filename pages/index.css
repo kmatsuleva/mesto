@@ -1,2 +1,5 @@
 /* vendor files */
 @import url("../vendor/normalize.css");
+
+/* global styles */
+@import url("../blocks/page/page.css");
