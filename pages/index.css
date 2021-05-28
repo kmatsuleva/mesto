@@ -1,5 +1,6 @@
 /* vendor files */
 @import url("../vendor/normalize.css");
+@import url("../vendor/fonts/fonts.css");
 
 /* global styles */
 @import url("../blocks/page/page.css");
