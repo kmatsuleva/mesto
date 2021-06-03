@@ -1,0 +1,11 @@
+.edit-button {
+  background: none;
+  border: 1px solid #fff;
+  padding: 4px;
+  cursor: pointer;
+  transition: opacity .3s ease-in-out;
+}
+
+.edit-button:hover {
+  opacity: .6;
+}

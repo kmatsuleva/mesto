@@ -1,0 +1,6 @@
+.place {
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff; /* для того, чтобы текст в alt был видимым, если image не заряжается */
+  font-family: "Inter", Arial, sans-serif;
+}

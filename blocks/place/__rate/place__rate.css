@@ -1,0 +1,8 @@
+.place__rate {
+  cursor: pointer;
+  transition: opacity .3s ease-in-out;
+}
+
+.place__rate:hover {
+  opacity: .5;
+}

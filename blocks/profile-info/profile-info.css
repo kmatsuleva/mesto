@@ -1,0 +1,14 @@
+.profile-info {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+@media screen and (min-width: 584px) {
+  .profile-info {
+    text-align: left;
+    gap: 16px 18px;
+    align-items: baseline;
+  }
+}

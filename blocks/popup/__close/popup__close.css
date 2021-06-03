@@ -1,0 +1,12 @@
+.popup__close {
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 13px;
+  cursor: pointer;
+  transition: opacity .3s ease-in-out;
+}
+
+.popup__close:hover {
+  opacity: .6;
+}
+
