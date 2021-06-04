@@ -18,12 +18,14 @@ function popupClose(container, selector) {
   container.classList.remove(selector);
 }
 
-profileEditButton.addEventListener("click", function () {
+profileEditButton.addEventListener("click", function() {
   popupOpen(popupContainer, "popup_opened");
 });
 
-popupCloseButton.addEventListener("click", function () {
+popupCloseButton.addEventListener("click", function() {
   popupClose(popupContainer, "popup_opened");
+  formNameField.value = userName.textContent;
+  formPositionField.value = userPosition.textContent;
 });
 
 

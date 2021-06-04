@@ -2,7 +2,8 @@
   background-color: #000;
   color: #fff;
   border-radius: 2px;
-  padding: 14px 0;
+  padding: 13px 0;
+  margin-top: 18px;
   font-size: 14px;
   line-height: 1.21;
   font-family: "Inter", Arial, sans-serif;
@@ -12,4 +13,10 @@
 
 .popup__submit:hover {
   opacity: .8;
+}
+
+@media screen and (min-width: 730px) {
+  .popup__submit {
+    font-size: 18px;
+  }
 }

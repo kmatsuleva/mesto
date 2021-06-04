@@ -1,9 +1,9 @@
 .edit-button {
   background: none;
-  border: 1px solid #fff;
-  padding: 4px;
   cursor: pointer;
   transition: opacity .3s ease-in-out;
+  padding: 0;
+  border: 0;
 }
 
 .edit-button:hover {
@@ -12,7 +12,6 @@
 
 @media screen and (min-width: 730px) {
   .edit-button {
-    padding: 7px;
     width: 24px;
     height: 24px;
   }
