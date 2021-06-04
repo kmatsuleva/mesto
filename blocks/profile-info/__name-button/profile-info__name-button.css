@@ -1,5 +1,6 @@
 .profile-info__name-button {
   display: flex;
+  justify-content: center;
   align-items: baseline;
   width: 100%;
 }
