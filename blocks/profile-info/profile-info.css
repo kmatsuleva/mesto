@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  max-width: 350px;
+  max-width: 470px;
+  width: 100%;
 }
 
 @media screen and (min-width: 584px) {
   .profile-info {
     text-align: left;
-    gap: 10px 21px;
+    max-width: 365px;
   }
 }

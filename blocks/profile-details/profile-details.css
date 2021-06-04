@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   margin-bottom: 33px;
+  width: 100%;
 }
 
 @media screen and (min-width: 584px) {
@@ -14,7 +15,8 @@
 
 @media screen and (min-width: 730px) {
   .profile-details {
-    width: 80%;
+    max-width: 80%;
     margin: 0;
+    padding-right: 19px
   }
 }
