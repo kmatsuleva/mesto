@@ -14,4 +14,4 @@
 * Медиазапросы
 
 ## Ссылка на website
-[Github pages](https://kmatsuleva.github.io/russian-travel/)
+[Github pages](https://kmatsuleva.github.io/mesto/)
