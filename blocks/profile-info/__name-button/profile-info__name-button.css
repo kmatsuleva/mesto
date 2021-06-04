@@ -1,11 +1,12 @@
 .profile-info__name-button {
   display: flex;
+  justify-content: center;
   align-items: baseline;
   width: 100%;
 }
 
 @media screen and (min-width: 584px) {
   .profile-info__name-button {
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
