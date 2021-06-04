@@ -9,3 +9,11 @@
 .edit-button:hover {
   opacity: .6;
 }
+
+@media screen and (min-width: 730px) {
+  .edit-button {
+    padding: 7px;
+    width: 24px;
+    height: 24px;
+  }
+}

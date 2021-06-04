@@ -4,3 +4,10 @@
   display: block;
   margin: 0 auto;
 }
+
+@media screen and (min-width: 730px) {
+  .edit-button__image {
+    width: 10px;
+    height: 10px;
+  }
+}

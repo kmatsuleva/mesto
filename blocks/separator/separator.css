@@ -1,0 +1,7 @@
+.separator {
+  height: 1px;
+  background-color: rgba(84, 84, 84, 0.7);
+  border: none;
+  max-width: 880px;
+  margin: 0 auto;
+}

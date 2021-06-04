@@ -7,5 +7,13 @@
   .profile-details {
     flex-direction: row;
     align-items: center;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 730px) {
+  .profile-details {
+    width: 80%;
+    margin: 0;
   }
 }
