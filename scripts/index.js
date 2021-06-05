@@ -1,5 +1,5 @@
 let mainContainer = document.querySelector(".main"),
-  popupContainer = mainContainer.querySelector(".popup"),
+  popupContainer = document.querySelector(".popup"),
   profileContainer = mainContainer.querySelector(".profile"),
   userName = profileContainer.querySelector(".profile-info__name"),
   userPosition = profileContainer.querySelector(".profile-info__profession"),
