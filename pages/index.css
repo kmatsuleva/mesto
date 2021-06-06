@@ -10,10 +10,10 @@
 @import url("../blocks/header/__logo/header__logo.css");
 
 /* main */
-@import url("../blocks/avatar/avatar.css");
 @import url("../blocks/profile/profile.css");
-@import url("../blocks/profile-details/profile-details.css");
+@import url("../blocks/profile/__profile-details/profile__profile-details.css");
 @import url("../blocks/profile-info/profile-info.css");
+@import url("../blocks/profile/__avatar/profile__avatar.css");
 @import url("../blocks/profile-info/__name-button/profile-info__name-button.css");
 @import url("../blocks/profile-info/__name/profile-info__name.css");
 @import url("../blocks/edit-button/edit-button.css");
