@@ -4,6 +4,13 @@
   margin-bottom: 13px;
   cursor: pointer;
   transition: opacity .3s ease-in-out;
+  background-image: url('../../../images/close-icon.svg');
+  background-color: transparent;
+  background-size: cover;
+  border: 0;
+  padding: 0;
+  width: 36px;
+  height: 40px;
 }
 
 .popup__close:hover {
@@ -14,5 +21,7 @@
   .popup__close {
     width: 60px;
     height: 60px;
+    margin-right: -50px;
+    margin-bottom: -9px;
   }
 }

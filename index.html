@@ -16,62 +16,57 @@
     <section class="profile">
       <div class="profile__profile-details">
         <img src="./images/avatar.jpg" alt="Фото профиля" class="profile__avatar" />
-        <div class="profile-info">
-          <div class="profile-info__name-button">
-            <h1 class="profile-info__name">Жак-Ив Кусто</h1>
-            <button type="button" class="edit-button">
-              <img src="./images/edit-icon.svg" alt="Кнопка для редактирования профиля" class="edit-button__image" />
-            </button>
+        <div class="profile__profile-info">
+          <div class="profile__name-button">
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <button type="button" aria-label="Редактировать профиль." class="profile__edit-button"></button>
           </div>
-          <p class="profile-info__profession">Исследователь океана</p>
+          <p class="profile__profession">Исследователь океана</p>
         </div>
       </div>
-      <button type="button" class="add-button">
-        <img src="./images/add-icon.svg" alt="Кнопка для добавления карточек" class="add-button__image" />
-      </button>
+      <button type="button" aria-label="Добавить карточку." class="profile__add-button"></button>
     </section>
     <section class="places">
       <div class="place">
-        <img src="./images/baikal.jpg" alt="Байкал" class="place__image place__image_position_left" />
+        <img src="./images/baikal.jpg" alt="" class="place__image place__image_position_left" />
         <div class="place__description">
           <h2 class="place__title">Байкал</h2>
-          <img src="./images/like-icon.svg" alt="Нравится" class="place__rate" />
+          <button type="button" aria-label="Оценить карточку." class="place__rate"></button>
         </div>
       </div>
       <div class="place">
-        <img src="./images/moscow.jpg" alt="Москва" class="place__image" />
+        <img src="./images/moscow.jpg" alt="" class="place__image" />
         <div class="place__description">
           <h2 class="place__title">Москва</h2>
-          <img src="./images/like-icon.svg" alt="Нравится" class="place__rate" />
+          <button type="button" aria-label="Оценить карточку." class="place__rate"></button>
         </div>
       </div>
       <div class="place">
-        <img src="./images/onega.jpg" alt="Онега" class="place__image" />
+        <img src="./images/onega.jpg" alt="" class="place__image" />
         <div class="place__description">
           <h2 class="place__title">Онега</h2>
-          <img src="./images/like-icon.svg" alt="Нравится" class="place__rate" />
+          <button type="button" aria-label="Оценить карточку." class="place__rate"></button>
         </div>
       </div>
       <div class="place">
-        <img src="./images/krasnoyarsk.jpg" alt="Красноярск" class="place__image" />
+        <img src="./images/krasnoyarsk.jpg" alt="" class="place__image" />
         <div class="place__description">
           <h2 class="place__title">Красноярск</h2>
-          <img src="./images/like-icon.svg" alt="Нравится" class="place__rate" />
+          <button type="button" aria-label="Оценить карточку." class="place__rate"></button>
         </div>
       </div>
-
       <div class="place">
-        <img src="./images/kazan.jpg" alt="Казань" class="place__image" />
+        <img src="./images/kazan.jpg" alt="" class="place__image" />
         <div class="place__description">
           <h2 class="place__title">Казань</h2>
-          <img src="./images/like-icon.svg" alt="Нравится" class="place__rate" />
+          <button type="button" aria-label="Оценить карточку." class="place__rate"></button>
         </div>
       </div>
       <div class="place">
-        <img src="./images/saint-petersburg.jpg" alt="Санкт-Петербург" class="place__image" />
+        <img src="./images/saint-petersburg.jpg" alt="" class="place__image" />
         <div class="place__description">
           <h2 class="place__title">Санкт-Петербург</h2>
-          <img src="./images/like-icon.svg" alt="Нравится" class="place__rate" />
+          <button type="button" aria-label="Оценить карточку." class="place__rate"></button>
         </div>
       </div>
     </section>
@@ -81,12 +76,12 @@
   </footer>
   <div class="popup">
     <div class="popup__container">
-      <img src="./images/close-icon.svg" alt="Закрыть" class="popup__close" />
+      <button type="button" aria-label="Закрыть форму" class="popup__close"></button>
       <div class="popup__content">
         <h3 class="popup__title">Редактировать профиль</h3>
-        <form action="#" method="post" class="popup__fields">
-          <input type="text" value="Жак-Ив Кусто" class="popup__field popup__field_value_name" />
-          <input type="text" value="Исследователь океана" class="popup__field popup__field_value_position" />
+        <form action="#" method="post" name="user-info" class="popup__fields">
+          <input type="text" name="user-name" placeholder="Имя" class="popup__field popup__field_value_name" />
+          <input type="text" name="user-profession" placeholder="О себе" class="popup__field popup__field_value_position" />
           <button type="submit" class="popup__submit">Сохранить</button>
         </form>
       </div>

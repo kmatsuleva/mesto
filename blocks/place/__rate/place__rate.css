@@ -1,6 +1,12 @@
 .place__rate {
   cursor: pointer;
   transition: opacity .3s ease-in-out;
+  background-image: url('../../../images/like-icon.svg');
+  background-size: cover;
+  border: 0;
+  background-color: transparent;
+  width: 22px;
+  height: 19px;
 }
 
 .place__rate:hover {
