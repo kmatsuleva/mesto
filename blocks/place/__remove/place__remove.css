@@ -1,0 +1,19 @@
+.place__remove {
+  cursor: pointer;
+  transition: opacity .3s ease-in-out;
+  background-image: url('../../../images/remove-icon.svg');
+  background-size: contain;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 19px;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+}
+
+.place__remove:hover {
+  opacity: .6;
+}

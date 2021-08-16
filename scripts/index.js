@@ -1,4 +1,4 @@
-let mainContainer = document.querySelector('.main'),
+const mainContainer = document.querySelector('.main'),
   popupContainer = document.querySelector('.popup'),
   profileContainer = mainContainer.querySelector('.profile'),
   userName = profileContainer.querySelector('.profile__name'),
@@ -7,21 +7,51 @@ let mainContainer = document.querySelector('.main'),
   profileEditButton = profileContainer.querySelector('.profile__edit-button'),
   form = popupContainer.querySelector('.popup__fields'),
   formNameField = popupContainer.querySelector('.popup__field_value_name'),
-  formPositionField = popupContainer.querySelector('.popup__field_value_position');
+  formPositionField = popupContainer.querySelector('.popup__field_value_position'),
+  placesSection = mainContainer.querySelector('.places'),
+  placeTemplate = placesSection.querySelector('#place').content;
+
+const initialCards = [
+  {
+    name: 'Байкал',
+    link: './images/baikal.jpg'
+  },
+  {
+    name: 'Москва',
+    link: './images/moscow.jpg'
+  },
+  {
+    name: 'Онега',
+    link: './images/onega.jpg'
+  },
+  {
+    name: 'Красноярск',
+    link: './images/krasnoyarsk.jpg'
+  },
+  {
+    name: 'Казань',
+    link: './images/kazan.jpg'
+  },
+  {
+    name: 'Санкт-Петербург',
+    link: './images/saint-petersburg.jpg'
+  }
+];
 
 
-function popupOpen(container, selector) {
+
+const popupOpen = (container, selector) => {
   formNameField.value = userName.textContent;
   formPositionField.value = userProfession.textContent;
 
   container.classList.add(selector);
 }
 
-function popupClose(container, selector) {
+const popupClose = (container, selector) => {
   container.classList.remove(selector);
 }
 
-function formSubmitHandler(evt) {
+const formSubmitHandler = evt => {
   evt.preventDefault();
 
   userName.textContent = formNameField.value;
@@ -30,12 +60,23 @@ function formSubmitHandler(evt) {
   popupClose(popupContainer, 'popup_opened');
 }
 
-profileEditButton.addEventListener('click', function() {
-  popupOpen(popupContainer, 'popup_opened');
+
+
+initialCards.forEach(item => {
+  const placeElement = placeTemplate.querySelector('.place').cloneNode(true),
+        deleteButton = placeElement.querySelector('.place__remove'),
+        likeButton = placeElement.querySelector('.place__rate');
+
+  placeElement.querySelector('.place__title').textContent = item.name;
+  placeElement.querySelector('.place__image').style.backgroundImage = `url(${item.link}`;
+
+  deleteButton.addEventListener('click', event => event.target.closest('.place').remove());
+  likeButton.addEventListener('click', event => event.target.classList.toggle('place__rate_active'));
+
+  placesSection.append(placeElement);
 });
 
-popupCloseButton.addEventListener('click', function() {
-  popupClose(popupContainer, 'popup_opened');
-});
+profileEditButton.addEventListener('click', () => popupOpen(popupContainer, 'popup_opened'));
+popupCloseButton.addEventListener('click', () => popupClose(popupContainer, 'popup_opened'));
 
 form.addEventListener('submit', formSubmitHandler);
